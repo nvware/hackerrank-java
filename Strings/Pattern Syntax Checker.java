@@ -14,7 +14,9 @@ public class Solution
                   System.out.println("Valid");
               }catch(PatternSyntaxException pse){
                   System.out.println("Invalid");
-              }
+              } finally {
+                testCases--;
+            }
 		}
 	}
 }
