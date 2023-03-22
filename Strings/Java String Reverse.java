@@ -1,24 +1,19 @@
 import java.io.*;
 import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String A = sc.next();
         
-        Scanner sc=new Scanner(System.in);
-        String A=sc.next();
-        /* Enter your code here. Print output to STDOUT. */
-        StringBuilder sb = new StringBuilder();
-        sb.append(A);
-        // reverse StringBuilder         
-        String s = sb.reverse().toString();
-        if(A.equals(s))
-          System.out.print("Yes");
-        else
-          System.out.print("No");
-          
+        String s = new StringBuilder(A).reverse().toString();
+        String result = A.equals(s) ? "Yes" : "No";
+        System.out.println(result);
     }
 }
+
 
 
 
