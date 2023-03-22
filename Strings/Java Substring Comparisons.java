@@ -12,7 +12,6 @@ public class Solution {
         java.util.List<String> sList=new java.util.ArrayList<>();
         for(int i=0;i<=s.length()-k;i++)
         {            
-            //  System.out.println();
              sList.add(s.substring(i,i+k));
         }
         java.util.Collections.sort(sList);
@@ -21,7 +20,6 @@ public class Solution {
         
         return smallest + "\n" + largest;
     }
-
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
