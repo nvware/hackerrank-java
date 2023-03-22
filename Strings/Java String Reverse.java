@@ -7,7 +7,7 @@ public class Solution {
         String A = sc.next();
         
         String s = new StringBuilder(A).reverse().toString();
-        String result = A.equals(s) ? "Yes" : "No";
+        String result = A.equals(s) ? "Yes" : "No";  // if manam -> print yes.
         System.out.println(result);
     }
 }
